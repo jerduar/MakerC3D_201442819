@@ -53,7 +53,7 @@ expresionL  ::= expresionL:izq AND expresionL:der
                     :}
             |   expresionL:izq OR expresionL:der        
                     {:
-                        String temp = ControlC3D.generaTemp();
+                        String temp = ControlC3D.generaTemp(); 
                         String c3d = temp + " = " + izq.getCad() + " || " + der.getCad() + ";\n";
                         ControlC3D.agregarC3D(c3d);
                         RESULT = new NodoC3D(temp);
